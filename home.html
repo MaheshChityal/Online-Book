@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onile Book Narrator</title>
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="section1">
+        <header class="header">
+            <!-- Desktop Menu -->
+            <nav class="nav-desktop">
+                <div class="left">
+                    <h1>Online Book Narrator</h1>
+                </div>
+                <div class="right">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#section2">Best Seller</a></li>
+                        <li><a href="#section3">Trending</a></li>
+                        <li><a href="#section4">New Release</a></li>
+                        
+                         </ul>
+                </div>
+            </nav>
+        </header>
+        <div class="container">
+            <img src="books/photo.jpg" alt="">
+            <h2>Online Book Narrator</h2>
+            <p>You can Listen any book from our website</p>
+        </div>
+    </section>
+
+    <section class="section2" id="section2">
+        <h2>Best Seller</h2>
+        <div class="best-seller">
+            <div class="album">
+                <img src="books/1.jpg" alt="">
+                <div class="project-content">
+                    <div class="ablum-info">
+                       <h3 onclick="image('one')" id="one">Play</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="album">
+                <img src="books/2.jpg" alt="">
+                <div class="project-content">
+                    <div class="ablum-info">
+                        
+                        <h3 onclick="image('two')">Play</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="album">
+                <img src="books/3.jpg" alt="">
+                <div class="project-content">
+                    <div class="ablum-info">
+                        <h3 onclick="image('three')">Play</h3>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="album">
+                <img src="books/4.jpg" alt="">
+                <div class="project-content">
+                    <div class="ablum-info">
+                        <h3 onclick="image('four')">Play</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="album">
+                <img src="books/5.jpg" alt="">
+                <div class="project-content">
+                    <div class="ablum-info">
+                        <h3 onclick="image('five')">Play</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="album">
+                <img src="books/6.jpg" alt="">
+                <div class="project-content">
+                    <div class="ablum-info">
+                        
+                        <h3>Play</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="album">
+                <img src="books/7.jpg" alt="">
+                <div class="project-content">
+                    <div class="ablum-info">
+                        
+                        <h3>Play</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="album">
+                <img src="books/8.jpg" alt="">
+                <div class="project-content">
+                    <div class="ablum-info">
+                        
+                        <h3>Play</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section class="section3" id="section3">
+        <h2>Trending</h2>
+        <div class="best-seller">
+            <div class="album">
+                <img src="books/1.jpg" alt="">
+                <div class="project-content">
+                    <div class="ablum-info">
+                        
+                        <h3>Play</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="album">
+                <img src="books/2.jpg" alt="">
+                <div class="project-content">
+                    <div class="ablum-info">
+                        
+                        <h3>Play</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="album">
+                <img src="books/3.jpg" alt="">
+                <div class="project-content">
+                    <div class="ablum-info">
+                        
+                        <h3>Play</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="album">
+                <img src="books/4.jpg" alt="">
+                <div class="project-content">
+                    <div class="ablum-info">
+                        
+                        <h3>Play</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="album">
+                <img src="books/5.jpg" alt="">
+                <div class="project-content">
+                    <div class="ablum-info">
+                        
+                        <h3>Play</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="album">
+                <img src="books/6.jpg" alt="">
+                <div class="project-content">
+                    <div class="ablum-info">
+                        
+                        <h3>Play</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="album">
+                <img src="books/7.jpg" alt="">
+                <div class="project-content">
+                    <div class="ablum-info">
+                        
+                        <h3>Play</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="album">
+                <img src="books/8.jpg" alt="">
+                <div class="project-content">
+                    <div class="ablum-info">
+                        
+                        <h3>Play</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <hr>
+
+    
+                <div class="project-content">
+                    <div class="ablum-info">
+                        
+                        <h3>Play</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <script>
+        function image(src){
+            localStorage.setItem('book',src);
+            console.log("hey");
+            window.location.href = "player.html";
+        }
+
+        // $.ajax({
+        // url: "main.py",
+        // }).done(function(o) {
+        // // do something
+        // });
+    </script>
+</body>
+
+</html>
